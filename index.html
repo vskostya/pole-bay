@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Пилонная Бухта — перевести через банк</title>
+<style>
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto;
+    background: #f5f6f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  .card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    width: 92%;
+    max-width: 420px;
+  }
+  h1 { margin: 0 0 8px; font-size: 22px; }
+  p { margin: 6px 0 18px; color: #555; }
+  .qr { width: 240px; margin: 0 auto 18px; border-radius: 8px; }
+  .btn {
+    display: block;
+    margin: 10px auto;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    width: 90%;
+    max-width: 320px;
+  }
+  .obank { background: #0093dd; }
+  .alt { background: #777; }
+  .hint { font-size: 13px; color: #777; margin-top: 10px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Пилонная Бухта</h1>
+    <p>Перевести можно через любое банковское приложение</p>
+
+    <img class="qr" src="https://chart.googleapis.com/chart?cht=qr&chs=400x400&chl=https%3A%2F%2Fapi.dengi.o.kg%2F%2300020101021132680012p2p.dengi.kg01048580111263746081194510129967050908691202111302123413%25D0%259A%25D0%259E%25D0%259D%25D0%25A1%25D0%25A2%25D0%25A2%25D0%25A2%25D0%2598%25D0%259D%2520%25D0%2592.520473995303417540105906O%2521Bank6304D602" alt="QR для перевода" />
+
+    <a class="btn obank" href="https://api.dengi.o.kg/#00020101021132680012p2p.dengi.kg01048580111263746081194510129967050908691202111302123413%D0%9A%D0%9E%D0%9D%D0%A1%D0%A2%D0%90%D0%9D%D0%A2%D0%98%D0%9D%20%D0%92.520473995303417540105906O%21Bank6304D602" target="_blank">Открыть в O! Bank</a>
+
+    <a class="btn alt" href="#" target="_blank">Открыть в другом банке</a>
+
+    <div class="hint">📱 Если ссылка не открывается — просто отсканируйте QR</div>
+  </div>
+</body>
+</html>
